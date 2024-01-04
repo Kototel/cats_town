@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SimpleTextViewTestStyle"/>
+
+    <style name="SimpleTextViewTestStyle.AllAttrs">
+        <item name="android:text">12345</item>
+        <item name="android:textSize" tools:ignore="PxUsage">100px</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">4</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLength">400</item>
+        <item name="android:minHeight" tools:ignore="PxUsage">200px</item>
+        <item name="android:maxHeight" tools:ignore="PxUsage">400px</item>
+        <item name="android:minWidth" tools:ignore="PxUsage">300px</item>
+        <item name="android:maxWidth" tools:ignore="PxUsage">500px</item>
+        <item name="android:enabled">false</item>
+        <item name="android:fadingEdgeLength" tools:ignore="PxUsage">9px</item>
+        <item name="android:requiresFadingEdge">horizontal</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:breakStrategy" tools:ignore="NewApi">high_quality</item>
+        <item name="android:hyphenationFrequency">full</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.SingleLine">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.SingleLine.WithEllipsize">
+        <item name="android:ellipsize">none</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.SingleLine.WithMaxMinLines">
+        <item name="android:maxLines">100</item>
+        <item name="android:minLines">100</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.TextAppearance">
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.WithAppearance">
+        <item name="android:textAppearance">@style/SimpleTextViewTestStyle.TextAppearance</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.WithAppearance.WithTextSize">
+        <item name="android:textSize" tools:ignore="SpUsage">100dp</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.WithAppearance.WithTextColor">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.WithLines">
+        <item name="android:lines">100</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:minLines">3</item>
+    </style>
+
+    <style name="SimpleTextViewTestTheme">
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SimpleTextViewTestAppTheme">
+        <item name="simpleTextViewTheme">@style/SimpleTextViewTestTheme</item>
+    </style>
+
+    <style name="SimpleTextViewTestStyle.StyleConstructor">
+        <item name="android:text">12345</item>
+        <item name="android:textSize" tools:ignore="SpUsage">25dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="simpleTextViewTheme" format="reference"/>
+
+    <declare-styleable name="SimpleTextView">
+        <!-- Текст. -->
+        <attr name="android:text" format="reference|string" localization="suggested"/>
+        <!-- Размер текста. -->
+        <attr name="android:textSize"/>
+        <!-- Цвет текста. -->
+        <attr name="android:textColor"/>
+        <!-- Отображение всех букв заглавными. -->
+        <attr name="android:textAllCaps" format="boolean"/>
+        <!-- Семейство шрифтов. -->
+        <attr name="android:fontFamily" format="reference|string"/>
+        <!-- Внещний вид текста: цвет текста, цвет ссылок, размер текста, шрифт, стиль текста. -->
+        <attr name="android:textAppearance" format="reference"/>
+        <!-- Включить стандартные отступы шрифтов. По умолчанию включены. -->
+        <attr name="android:includeFontPadding" format="boolean"/>
+        <!-- Количество строк. -->
+        <attr name="android:lines" format="integer" min="0"/>
+        <!-- Максимальное количество строк. -->
+        <attr name="android:maxLines" format="integer" min="0"/>
+        <!-- Минимальное количество строк. -->
+        <attr name="android:minLines" format="integer" min="0"/>
+        <!-- Признак однострочного текста, помимо maxLines 1 еще выставляется ellipsize END. -->
+        <attr name="android:singleLine" format="boolean"/>
+        <!-- Ограничение по количеству символов в тексте. -->
+        <attr name="android:maxLength" format="integer" min="0"/>
+        <!-- Минимальная высота компонента. -->
+        <attr name="android:minHeight" format="dimension"/>
+        <!-- Максимальная высота компонента. -->
+        <attr name="android:maxHeight" format="dimension"/>
+        <!-- Минимальная ширина компонента. -->
+        <attr name="android:minWidth" format="dimension"/>
+        <!-- Максимальная ширина компонента. -->
+        <attr name="android:maxWidth" format="dimension"/>
+        <!-- Состояние доступности для кликов. По умолчанию доступно. -->
+        <attr name="android:enabled" format="boolean"/>
+        <!-- Ширина затемнения при заблюреном сокращении текста. -->
+        <attr name="android:fadingEdgeLength" format="dimension"/>
+        <!-- Цвет ссылок. -->
+        <attr name="android:textColorLink" format="reference|color"/>
+
+        <!-- Стиль текста. -->
+        <attr name="android:textStyle">
+            <!-- Обычный. -->
+            <flag name="normal" value="0"/>
+            <!-- Жирный. -->
+            <flag name="bold" value="1"/>
+            <!-- Наклон. -->
+            <flag name="italic" value="2"/>
+            <!-- Жирный + наклон. -->
+            <flag name="bold_italic" value="3"/>
+        </attr>
+        <!-- Расположение текста относительно компонента. -->
+        <attr name="android:gravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <!-- Выравнивание текста. -->
+        <attr name="android:textAlignment">
+            <enum name="inherit" value="0"/>
+            <enum name="gravity" value="1"/>
+            <enum name="textStart" value="2"/>
+            <enum name="textEnd" value="3"/>
+            <enum name="center" value="4"/>
+            <enum name="viewStart" value="5"/>
+            <enum name="viewEnd" value="6"/>
+        </attr>
+        <!-- Сокращение текста. -->
+        <attr name="android:ellipsize">
+            <enum name="none" value="0"/>
+            <enum name="start" value="1"/>
+            <enum name="middle" value="2"/>
+            <enum name="end" value="3"/>
+            <enum name="marquee" value="4"/>
+        </attr>
+        <!-- Стратегия переносов строк. -->
+        <attr name="android:breakStrategy">
+            <enum name="simple" value="0"/>
+            <enum name="high_quality" value="1"/>
+            <enum name="balanced" value="2"/>
+        </attr>
+        <!-- Частота переносов строк. -->
+        <attr name="android:hyphenationFrequency">
+            <enum name="none" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="full" value="2"/>
+        </attr>
+        <!-- Признак затемнения сокращения текста. По умолчанию none. -->
+        <attr name="android:requiresFadingEdge">
+            <enum name="none" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <!-- Тип автоматического определения размера текста. По умолчанию none. -->
+        <attr name="SimpleTextView_autoSizeTextType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="uniform" value="1"/>
+        </attr>
+        <!-- Максимальный размер текста для автоматического определения. -->
+        <attr name="SimpleTextView_autoSizeMaxTextSize" format="dimension"/>
+        <!-- Минимальный размер текста для автоматического определения. -->
+        <attr name="SimpleTextView_autoSizeMinTextSize" format="dimension"/>
+        <!-- Шаг в интервале от мин. до макс. размера текста при автоматическом определении. -->
+        <attr name="SimpleTextView_autoSizeStepGranularity" format="dimension"/>
+        <!-- Минимальный размер текста. Использовать в dp для явного ограничения значений sp. -->
+        <attr name="SimpleTextView_minTextSize" format="dimension"/>
+        <!-- Максимальный размер текста. Использовать в dp для явного ограничения значений sp. -->
+        <attr name="SimpleTextView_maxTextSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

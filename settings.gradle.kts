@@ -33,10 +33,12 @@ dependencyResolutionManagement {
             version("timber", "4.7.1")
             version("appCompat", "1.6.1")
             version("commonsLang", "3.9")
+            version("androidxAnnotation", "1.3.0")
 
             library("androidx-appcompat", "androidx.appcompat", "appcompat").versionRef("appCompat")
             library("androidx-fragment", "androidx.fragment", "fragment").versionRef("androidxFragment")
             library("androidx-core", "androidx.core", "core-ktx").versionRef("androidxCore")
+            library("androidx-annotation", "androidx.annotation", "annotation").versionRef("androidxAnnotation")
             library("recyclerview", "androidx.recyclerview", "recyclerview").versionRef("recyclerView")
             library("timber", "com.jakewharton.timber", "timber").versionRef("timber")
             library("commons-lang3", "org.apache.commons", "commons-lang3").versionRef("commonsLang")

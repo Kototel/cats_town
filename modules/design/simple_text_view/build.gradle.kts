@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.conditional.cats_town.utils.custom_view_tools"
+    namespace = "com.conditional.cats_town.design.simple_text_view"
     compileSdk = extra["android.compileSdk"].toString().toInt()
 
     defaultConfig {
@@ -16,12 +16,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
-    implementation(libs.androidx.core)
-    implementation(libs.androidx.fragment)
     implementation(libs.commons.lang3)
-    implementation(libs.timber)
-    implementation(libs.recyclerview)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.annotation)
+    implementation(project(":custom_view_tools"))
 }
