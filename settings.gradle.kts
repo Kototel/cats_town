@@ -1,5 +1,5 @@
 @file:Suppress("UnstableApiUsage")
-rootProject.name = "Cats Town"
+rootProject.name = "cats_town"
 apply(from = "gradle/app_modules.gradle.kts")
 
 pluginManagement {
@@ -25,5 +25,21 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+    }
+    versionCatalogs {
+        create("libs") {
+            version("androidxCore", "1.10.0")
+            version("androidxFragment", "1.3.6")
+            version("recyclerView", "1.3.2")
+            version("timber", "4.7.1")
+            version("appCompat", "1.6.1")
+
+            library("androidx-appcompat", "androidx.appcompat", "appcompat").versionRef("appCompat")
+            library("androidx-fragment", "androidx.fragment", "fragment").versionRef("androidxFragment")
+            library("androidx-core", "androidx.core", "core-ktx").versionRef("androidxCore")
+            library("recyclerview", "androidx.recyclerview", "recyclerview").versionRef("recyclerView")
+            library("timber", "com.jakewharton.timber", "timber").versionRef("timber")
+            library("commons-lang3", "org.apache.commons:commons-lang3:3.9")
+        }
     }
 }

@@ -10,9 +10,8 @@ kotlin {
     sourceSets {
         val androidMain by getting {
             dependencies {
-                api("androidx.activity:activity-compose:1.7.1")
-                api("androidx.appcompat:appcompat:1.6.1")
-                api("androidx.core:core-ktx:1.10.0")
+                implementation(libs.androidx.core)
+                implementation(libs.androidx.appcompat)
             }
         }
 
