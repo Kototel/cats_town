@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils.layout
+package com.conditional.cats_town.utils.custom_view_tools.utils.layout
 
 import android.os.Build
 import android.text.BoringLayout
@@ -9,10 +9,10 @@ import android.text.TextDirectionHeuristics
 import android.text.TextPaint
 import android.text.TextUtils
 import android.widget.TextView
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory.Companion.DEFAULT_SPACING_ADD
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory.Companion.DEFAULT_SPACING_MULTI
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory.Companion.RTL_SYMBOLS_CHECK_COUNT_LIMIT
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory.Companion.SINGLE_LINE
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory.Companion.DEFAULT_SPACING_ADD
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory.Companion.DEFAULT_SPACING_MULTI
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory.Companion.RTL_SYMBOLS_CHECK_COUNT_LIMIT
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory.Companion.SINGLE_LINE
 import java.lang.reflect.Constructor
 
 /**

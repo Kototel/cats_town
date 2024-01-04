@@ -1,7 +1,7 @@
 /**
  * Утилиты для выделения текста.
  */
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.text.Spannable
 import android.text.SpannableString

@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils.layout
+package com.conditional.cats_town.utils.custom_view_tools.utils.layout
 
 import android.text.BoringLayout
 import android.text.Layout
@@ -12,13 +12,13 @@ import android.text.style.MetricAffectingSpan
 import android.widget.TextView
 import androidx.annotation.IntRange
 import androidx.annotation.Px
-import com.conditional.cats_town.custom_view_tools.TextLayout
-import com.conditional.cats_town.custom_view_tools.utils.HighlightSpan
-import com.conditional.cats_town.custom_view_tools.utils.TextHighlights
-import com.conditional.cats_town.custom_view_tools.utils.ellipsizeIndex
-import com.conditional.cats_town.custom_view_tools.utils.getTextWidth
-import com.conditional.cats_town.custom_view_tools.utils.highlightText
-import com.conditional.cats_town.custom_view_tools.utils.textHeight
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout
+import com.conditional.cats_town.utils.custom_view_tools.utils.HighlightSpan
+import com.conditional.cats_town.utils.custom_view_tools.utils.TextHighlights
+import com.conditional.cats_town.utils.custom_view_tools.utils.ellipsizeIndex
+import com.conditional.cats_town.utils.custom_view_tools.utils.getTextWidth
+import com.conditional.cats_town.utils.custom_view_tools.utils.highlightText
+import com.conditional.cats_town.utils.custom_view_tools.utils.textHeight
 import kotlin.math.ceil
 
 /**

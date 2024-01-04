@@ -24,6 +24,5 @@ android {
 dependencies {
     implementation(libs.androidx.appcompat)
 
-    implementation(project(":modules:screens:main_screen"))
-    implementation(project(":modules:utils:custom_view_tools"))
+    implementation(project(":main_screen"))
 }

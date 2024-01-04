@@ -3,27 +3,8 @@ plugins {
     kotlin("multiplatform")
 }
 
-kotlin {
-    android()
-
-    sourceSets {
-        val androidMain by getting {
-            dependencies {
-                implementation(libs.androidx.core)
-                implementation(libs.androidx.appcompat)
-            }
-        }
-
-        val commonMain by getting {
-            dependencies {
-
-            }
-        }
-    }
-}
-
 android {
-    namespace = "com.conditional.cats_town.main_screen"
+    namespace = "com.conditional.cats_town.screens.main_screen"
     compileSdk = extra["android.compileSdk"].toString().toInt()
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -37,5 +18,25 @@ android {
 
     kotlin {
         jvmToolchain(17)
+    }
+}
+
+kotlin {
+    android()
+
+    sourceSets {
+        val androidMain by getting {
+            dependencies {
+                implementation(libs.androidx.core)
+                implementation(libs.androidx.appcompat)
+                implementation(project(":custom_view_tools"))
+            }
+        }
+
+        val commonMain by getting {
+            dependencies {
+
+            }
+        }
     }
 }

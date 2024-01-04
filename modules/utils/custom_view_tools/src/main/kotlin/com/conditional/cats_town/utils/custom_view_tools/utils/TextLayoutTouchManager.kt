@@ -1,11 +1,11 @@
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.annotation.SuppressLint
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.IntRange
-import com.conditional.cats_town.custom_view_tools.TextLayout
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout
 
 /**
  * Менеджер для упрощения работы с обработкой касаний по нескольким текстовым разметкам [TextLayout] в кастомной [View].

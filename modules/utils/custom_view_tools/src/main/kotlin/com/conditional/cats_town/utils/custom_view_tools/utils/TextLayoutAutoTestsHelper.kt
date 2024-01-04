@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
@@ -10,7 +10,7 @@ import androidx.core.content.res.ResourcesCompat.ID_NULL
 import androidx.core.view.ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_YES
 import org.json.JSONArray
 import org.json.JSONObject
-import com.conditional.cats_town.custom_view_tools.TextLayout
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout
 
 /**
  * Вспомогательный класс для автотестов кастомных [View], использующих компонент текстовой разметки [TextLayout].

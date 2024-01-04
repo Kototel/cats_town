@@ -1,6 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 rootProject.name = "cats_town"
-apply(from = "gradle/modules.gradle.kts")
 
 pluginManagement {
     repositories {
@@ -44,3 +43,25 @@ dependencyResolutionManagement {
         }
     }
 }
+
+val screens = "modules/screens"
+val utils = "modules/utils"
+val design = "modules/design"
+
+include(":android")
+project(":android").projectDir = file("apps/android")
+
+// region Screens
+include(":main_screen")
+project(":main_screen").projectDir = file("$screens/main_screen")
+// endregion
+
+// region Utils
+include(":custom_view_tools")
+project(":custom_view_tools").projectDir = file("$utils/custom_view_tools")
+// endregion
+
+// region Design
+include(":simple_text_view")
+project(":simple_text_view").projectDir = file("$design/simple_text_view")
+// endregion

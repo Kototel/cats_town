@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.conditional.cats_town.custom_view_tools"
+    namespace = "com.conditional.cats_town.utils.custom_view_tools"
     compileSdk = extra["android.compileSdk"].toString().toInt()
 
     compileOptions {

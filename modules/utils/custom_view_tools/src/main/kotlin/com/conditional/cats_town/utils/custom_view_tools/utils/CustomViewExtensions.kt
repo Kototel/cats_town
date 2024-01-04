@@ -1,7 +1,7 @@
 /**
  * Набор инструментов для облегчения работы с кастомными view.
  */
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

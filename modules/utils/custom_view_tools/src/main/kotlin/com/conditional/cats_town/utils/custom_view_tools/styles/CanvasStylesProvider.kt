@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.styles
+package com.conditional.cats_town.utils.custom_view_tools.styles
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,15 +15,15 @@ import androidx.annotation.StyleRes
 import androidx.core.content.res.ResourcesCompat.ID_NULL
 import androidx.core.content.withStyledAttributes
 import androidx.recyclerview.widget.RecyclerView
-import com.conditional.cats_town.custom_view_tools.TextLayout
-import com.conditional.cats_town.custom_view_tools.styles.CanvasStylesProvider.Companion.paddingAttrs
-import com.conditional.cats_town.custom_view_tools.styles.CanvasStylesProvider.Companion.textAttrs
-import com.conditional.cats_town.custom_view_tools.styles.StyleParams.PaddingStyle
-import com.conditional.cats_town.custom_view_tools.styles.StyleParams.StyleKey
-import com.conditional.cats_town.custom_view_tools.styles.StyleParams.TextStyle
-import com.conditional.cats_town.custom_view_tools.utils.ThemeContextBuilder
-import com.conditional.cats_town.custom_view_tools.utils.doOnDetachedFromWindow
-import com.conditional.cats_town.custom_view_tools.utils.getFont
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout
+import com.conditional.cats_town.utils.custom_view_tools.styles.CanvasStylesProvider.Companion.paddingAttrs
+import com.conditional.cats_town.utils.custom_view_tools.styles.CanvasStylesProvider.Companion.textAttrs
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParams.PaddingStyle
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParams.StyleKey
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParams.TextStyle
+import com.conditional.cats_town.utils.custom_view_tools.utils.ThemeContextBuilder
+import com.conditional.cats_town.utils.custom_view_tools.utils.doOnDetachedFromWindow
+import com.conditional.cats_town.utils.custom_view_tools.utils.getFont
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.ConcurrentMap

@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.view.View.MeasureSpec
 import androidx.annotation.Px

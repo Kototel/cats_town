@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools
+package com.conditional.cats_town.utils.custom_view_tools
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -35,19 +35,19 @@ import androidx.core.content.res.ResourcesCompat.ID_NULL
 import androidx.core.graphics.withClip
 import androidx.core.graphics.withRotation
 import androidx.core.graphics.withTranslation
-import com.conditional.cats_town.custom_view_tools.TextLayout.*
-import com.conditional.cats_town.custom_view_tools.TextLayout.Companion.createTextLayoutByStyle
-import com.conditional.cats_town.custom_view_tools.styles.CanvasStylesProvider
-import com.conditional.cats_town.custom_view_tools.styles.StyleParams.StyleKey
-import com.conditional.cats_town.custom_view_tools.styles.StyleParams.TextStyle
-import com.conditional.cats_town.custom_view_tools.styles.StyleParamsProvider
-import com.conditional.cats_town.custom_view_tools.utils.SimpleTextPaint
-import com.conditional.cats_town.custom_view_tools.utils.TextHighlights
-import com.conditional.cats_town.custom_view_tools.utils.getTextWidth
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutConfigurator
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutCreator
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory
-import com.conditional.cats_town.custom_view_tools.utils.layout.LayoutFactory.Companion.RTL_SYMBOLS_CHECK_COUNT_LIMIT
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout.*
+import com.conditional.cats_town.utils.custom_view_tools.TextLayout.Companion.createTextLayoutByStyle
+import com.conditional.cats_town.utils.custom_view_tools.styles.CanvasStylesProvider
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParams.StyleKey
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParams.TextStyle
+import com.conditional.cats_town.utils.custom_view_tools.styles.StyleParamsProvider
+import com.conditional.cats_town.utils.custom_view_tools.utils.SimpleTextPaint
+import com.conditional.cats_town.utils.custom_view_tools.utils.TextHighlights
+import com.conditional.cats_town.utils.custom_view_tools.utils.getTextWidth
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutConfigurator
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutCreator
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory
+import com.conditional.cats_town.utils.custom_view_tools.utils.layout.LayoutFactory.Companion.RTL_SYMBOLS_CHECK_COUNT_LIMIT
 import org.apache.commons.lang3.StringUtils
 import kotlin.math.roundToInt
 

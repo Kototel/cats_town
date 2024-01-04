@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils.animation
+package com.conditional.cats_town.utils.custom_view_tools.utils.animation
 
 import android.graphics.Color
 import androidx.annotation.ColorInt

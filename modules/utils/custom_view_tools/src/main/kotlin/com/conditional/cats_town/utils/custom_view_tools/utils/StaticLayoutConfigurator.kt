@@ -1,4 +1,4 @@
-package com.conditional.cats_town.custom_view_tools.utils
+package com.conditional.cats_town.utils.custom_view_tools.utils
 
 import android.annotation.SuppressLint
 import android.os.Build.VERSION.SDK_INT
@@ -10,7 +10,7 @@ import android.text.TextUtils.TruncateAt
 import android.widget.TextView
 import androidx.annotation.IntRange
 import androidx.annotation.Px
-import com.conditional.cats_town.custom_view_tools.utils.StaticLayoutConfigurator.Companion.createStaticLayout
+import com.conditional.cats_town.utils.custom_view_tools.utils.StaticLayoutConfigurator.Companion.createStaticLayout
 
 /**
  * Конфигуратор для создания статичной текстовой разметки [StaticLayout].
