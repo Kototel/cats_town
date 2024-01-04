@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk = (findProperty("android.compileSdk") as String).toInt()
     namespace = "com.conditional.cats_town"
+    compileSdk = extra["android.compileSdk"].toString().toInt()
 
     defaultConfig {
         applicationId = "com.conditional.cats_town"
-        minSdk = (findProperty("android.minSdk") as String).toInt()
-        targetSdk = (findProperty("android.targetSdk") as String).toInt()
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = extra["android.minSdk"].toString().toInt()
+        targetSdk = extra["android.targetSdk"].toString().toInt()
+        versionCode = extra["app.versionCode"].toString().toInt()
+        versionName = extra["app.versionName"].toString()
     }
 
     compileOptions {

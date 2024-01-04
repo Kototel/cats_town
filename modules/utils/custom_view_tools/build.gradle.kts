@@ -5,12 +5,7 @@ plugins {
 
 android {
     namespace = "com.conditional.cats_town.custom_view_tools"
-    compileSdk = (findProperty("android.compileSdk") as String).toInt()
-
-    defaultConfig {
-        minSdk = (findProperty("android.minSdk") as String).toInt()
-        targetSdk = (findProperty("android.targetSdk") as String).toInt()
-    }
+    compileSdk = extra["android.compileSdk"].toString().toInt()
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

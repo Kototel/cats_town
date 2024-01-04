@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 rootProject.name = "cats_town"
-apply(from = "gradle/app_modules.gradle.kts")
+apply(from = "gradle/modules.gradle.kts")
 
 pluginManagement {
     repositories {
@@ -9,8 +9,8 @@ pluginManagement {
     }
 
     plugins {
-        val kotlinVersion = extra["kotlin.version"] as String
-        val agpVersion = extra["agp.version"] as String
+        val kotlinVersion = extra["kotlin.version"].toString()
+        val agpVersion = extra["agp.version"].toString()
 
         kotlin("jvm").version(kotlinVersion)
         kotlin("multiplatform").version(kotlinVersion)
@@ -33,13 +33,14 @@ dependencyResolutionManagement {
             version("recyclerView", "1.3.2")
             version("timber", "4.7.1")
             version("appCompat", "1.6.1")
+            version("commonsLang", "3.9")
 
             library("androidx-appcompat", "androidx.appcompat", "appcompat").versionRef("appCompat")
             library("androidx-fragment", "androidx.fragment", "fragment").versionRef("androidxFragment")
             library("androidx-core", "androidx.core", "core-ktx").versionRef("androidxCore")
             library("recyclerview", "androidx.recyclerview", "recyclerview").versionRef("recyclerView")
             library("timber", "com.jakewharton.timber", "timber").versionRef("timber")
-            library("commons-lang3", "org.apache.commons:commons-lang3:3.9")
+            library("commons-lang3", "org.apache.commons", "commons-lang3").versionRef("commonsLang")
         }
     }
 }
