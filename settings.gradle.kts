@@ -1,9 +1,10 @@
+@file:Suppress("UnstableApiUsage")
 rootProject.name = "Cats Town"
+apply(from = "gradle/app_modules.gradle.kts")
 
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         google()
     }
 
@@ -24,9 +25,5 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
-
-include(":apps:android")
-include(":modules:screens:main_screen")
